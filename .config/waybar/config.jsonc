@@ -47,10 +47,17 @@
   },
 
   "network": {
-    "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "󰈀  Wired",
-    "format-disconnected": "󰤮  Offline",
-    "tooltip": true
+    "interval": 2,
+    "interface": "wlan0", // Optional: Change to your specific interface if it doesn't auto-detect
+    "format-wifi": " {bandwidthDownBits:>6}↓ {bandwidthUpBits:>6}↑",
+    "format-ethernet": "󰈀 {bandwidthDownBits:>6}↓ {bandwidthUpBits:>6}↑",
+    "format-linked": "󰈀  {ifname} (No IP)",
+    "format-disconnected": "󰤮 Offline",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "󰈀 {ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
   },
 
   "pulseaudio": {
