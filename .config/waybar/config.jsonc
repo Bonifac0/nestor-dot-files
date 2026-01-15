@@ -17,6 +17,7 @@
     "memory",
     "network",
     "pulseaudio",
+    "hyprland/language",
     "custom/power"
   ],
 
@@ -70,6 +71,12 @@
     "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
     "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
     "tooltip": false
+  },
+
+  "hyprland/language": {
+    "format": "{short}",
+    "on-click": "~/.config/waybar/scripts/toggle-layout.sh",
+    "tooltip": true
   },
 
   "custom/power": {
