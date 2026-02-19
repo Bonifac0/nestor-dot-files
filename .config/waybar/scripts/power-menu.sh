@@ -1,6 +1,6 @@
 #!/bin/bash
 
-op=$(echo -e "  Shutdown\n󰑐  Reboot\n  Suspend\n󰍃  Logout" | wofi -i --dmenu --width 200 --height 265 --cache-file /dev/null)
+op=$(echo -e "  Shutdown\n󰑐  Reboot\n  Suspend\n󰍃  Logout" | wofi -i --dmenu --width 200 --height 285 --cache-file /dev/null)
 
 case $op in
     "  Shutdown")
